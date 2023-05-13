@@ -1,4 +1,6 @@
 # Projeto Interdisciplinar
- Repositório para o projeto do Truck Way
+Repositório para o projeto do Truck Way
 
- Criado para desenvolvimento desse projeto.
+Criado para desenvolvimento desse projeto.
+
+Adicionando essa linha diretamente no readme

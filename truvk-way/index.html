@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testando</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Página nossa</title>
 </head>
+
 <body>
-    <h1>Olá, mundo!</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consequuntur non earum sit assumenda! Illo non sint repudiandae quas blanditiis corrupti? Cupiditate sit id voluptatum magnam quidem natus ratione excepturi.</p>
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+                </ul>
+            </div>
+            <div class="menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+       
+        </div>
+    </header>
+
+    <script src="js/menu.js"></script>
+
+<!-- seção de apresentação inicial que contém a animação do texto -->
+<section class="section1">
+    <div class="container">
+        <span class="text primeiro-texto">Nós desenolvemos softwares</span>
+        <span class="text segundo-texto">Rapidos</span>
+    </div>
+    </div>
+
+<script src="js/text-animation.js"></script>
+
 </body>
+
 </html>

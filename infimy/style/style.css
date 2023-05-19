@@ -131,3 +131,16 @@ header {
         left: 0%;
     }
 }
+
+.footer-main {
+    background-color: #94a8df;
+    height: 100px;
+    display: flex;
+    padding: 20px 5%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-config {
+    background-color: #bdcf7f;
+}

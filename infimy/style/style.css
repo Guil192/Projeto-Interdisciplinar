@@ -86,10 +86,44 @@ header {
     }
 }
 
-/*** css da animação***/
+/*  css primeira seçao*/
+.container-apresentacao {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+  align-items: center;
+  background: black;
+}
 
-/* ===== Google Font Import - Poppins ===== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+.body-apresentacao, .img-apresentacao {
+    margin: 20px;
+}
+
+h1 {
+    color:#fff;
+    font-size: 100px;
+}
+
+p {
+    color:#fff;
+    font-size: 12px;
+    line-height: 100px;
+}
+
+button {
+    width: 180px;
+    color: #000;
+    font-size: 14px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
 
 .container-textanimation {
     height: 100px;

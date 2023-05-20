@@ -91,7 +91,7 @@ header {
 /* ===== Google Font Import - Poppins ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
-.section1 {
+.container-textanimation {
     height: 100px;
     display: flex;
     align-items: center;

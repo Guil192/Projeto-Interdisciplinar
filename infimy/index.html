@@ -28,8 +28,8 @@
         </nav>
         <div class="mobile-menu">
             <ul>
-                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#projetos.html" class="nav-link">Projetos</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
             </ul>
        
@@ -38,10 +38,79 @@
 
     <script src="js/menu.js"></script>
 
-    <section class="section1">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore adipisci quas, voluptas quos voluptatem, et cupiditate maiores fugiat ipsa consectetur placeat sunt at, iste nulla nemo unde? Quod, ab distinctio?
-    </section>
+    <section>
+        <div class="container-apresentacao">
 
+          <div class="body-apresentacao">
+                <h1>Infimy</h1>
+                <div class="container-textanimation">
+                  <div class="container">
+                      <p><span class="text primeiro-texto">Nós desenvolvemos softwares </span>
+                      <span class="text segundo-texto">Rapidos</span></p>
+                  </div>
+              </div>
+              <script src="js/text-animation.js"></script>
+                <button type="button">Fale conosco</button>
+           </div>
+
+          <div class="img-apresentacao">
+            <img src="img/img-apresentacao.png">
+          </div> 
+            </div>
+          </section>
+<section >
+    <h1>Nossos números falam por nós</h1>
+    <div class="img-teclado">
+      <img src="img/img-teclado.png">
+    </div>
+    <div class="container-colunas">
+      
+    <div class="coluna">
+      <h2>+200</h2>
+      <P>Projetos Concluidos</P>
+    </div>
+      
+    <div class="coluna-divisoria"></div>
+      
+    <div class="coluna">
+      <h2>+XX</h2>
+      <p>Anos no Mercado</p>
+    </div>
+      
+   <div class="coluna-divisoria"></div> 
+      
+    <div class="coluna">
+      <h2>+400.000</h2>
+      <p>Linhas de Código</p>
+    </div>
+    </div> 
+  </section>
+    
+   <section id=section-form>
+      <div>
+        <img src="icone.png">
+      </div>
+      <div class="container-form">
+     <h1 class="title-form">Formulário de Contato</h1>
+        <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+                <label>Nome</label>
+                <input type="text" placeholder="Digite seu nome" name="nome" >
+                <input type="hidden" name="accessKey" value="e614fd88-31e6-4e96-9aa7-c99885146153">
+                <label>E-mail</label>
+                <input type="email" placeholder="Digite seu e-mail" name="email">
+             <label>Telefone</label>
+                <input type="tel" placeholder="Digite seu telefone" name="telefone" pattern="[0-9]+$">
+                <label>Mensagem</label>
+         
+                <textarea name="msg" rows="6" placeholder="Conte mais sobre seu projeto"></textarea>
+                <input type="hidden" name="redirectTo" value="index.html">
+                <input type="submit" value="enviar" class="botao">
+            
+        </form> 
+      </div>
+   
+    </section>
+    
     <footer>
         <div class="footer-main">
             <div class="footer-config">

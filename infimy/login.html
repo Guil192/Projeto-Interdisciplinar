@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            color: black;
+            font-family: Verdana
+        }
+        
+        .geral {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        .formLogin {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 40px;
+            width: 400px;
+        }
+
+        .areaLogin img {
+            width: 420px;
+        }
+
+        .formLogin h1 {
+            padding: 0;
+            margin: 0;
+        }
+
+        .formLogin p {
+            display: inline-block;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .formLogin input {
+            padding: 15px;
+            font-size: 14px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+            margin-top: 5px;
+            border-radius: 4px;
+            outline: none;
+        }
+
+
+            .formLogin input:focus {
+                border: 1px solid blue;
+            }
+
+        .formLogin label {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .formLogin a:hover {
+            color: #00008b;
+        }
+
+        .botao_login {
+            background-color: #00008b;
+            color: #fff;
+            margin: 0;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="geral">
+    <form class="formLogin">
+        <h1>Login</h1>
+        <p>Digite os seus dados de acesso</p>
+        <label for="text">usuario</label>
+        <input type="text" placeholder="Login" id="login">
+        <label for="password">senha</label>
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="submit" class="botao_login" value="Acessar" onclick=" logar(); return false">
+
+    </form>
+    </div>
+
+    <script>
+
+
+        function logar(){
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "admin" && senha == "admin"){
+                location.href = "home.html";
+            }else{
+                alert('Usuario ou senha incorretos');
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

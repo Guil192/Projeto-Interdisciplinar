@@ -83,9 +83,34 @@
       <h2>+400.000</h2>
       <p>Linhas de Código</p>
     </div>
-    </div>
-    
+    </div> 
   </section>
+    
+   <section id=section-form>
+      <div>
+        <img src="icone.png">
+      </div>
+      <div class="container-form">
+     <h1 class="title-form">Formulário de Contato</h1>
+        <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+                <label>Nome</label>
+                <input type="text" placeholder="Digite seu nome" name="nome" >
+                <input type="hidden" name="accessKey" value="e614fd88-31e6-4e96-9aa7-c99885146153">
+                <label>E-mail</label>
+                <input type="email" placeholder="Digite seu e-mail" name="email">
+             <label>Telefone</label>
+                <input type="tel" placeholder="Digite seu telefone" name="telefone" pattern="[0-9]+$">
+                <label>Mensagem</label>
+         
+                <textarea name="msg" rows="6" placeholder="Conte mais sobre seu projeto"></textarea>
+                <input type="hidden" name="redirectTo" value="index.html">
+                <input type="submit" value="enviar" class="botao">
+            
+        </form> 
+      </div>
+   
+    </section>
+    
     <footer>
         <div class="footer-main">
             <div class="footer-config">

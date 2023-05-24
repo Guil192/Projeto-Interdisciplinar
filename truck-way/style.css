@@ -16,11 +16,6 @@ header, nav, main, aside, footer {
 	flex: 1 1 100vw;
 }
 
-nav  {
-	background: black;
-	
-}
-
 a {
 	color: white;
 }
@@ -47,6 +42,7 @@ main {
 }
 
 nav {
+	background: black;
 	justify-content: center;
 	align-items: center;
 }
@@ -284,8 +280,7 @@ hr {
   margin: 100px;
 }
 
-
-
+/* rodapé */
 .rodape {
     padding: 20px;
     height: 200px;
@@ -300,4 +295,9 @@ hr {
     background: rgb(207, 98, 98);
     border-radius: 5px;
     width: 30%;
+}
+
+/* seção principal */
+.section-principal {
+	height: 80vh;
 }

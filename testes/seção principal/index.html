@@ -10,14 +10,10 @@
 </head>
 
 <body>
-    <div class="plano-de-fundo">
-
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="imagens/grecia.mp4" type="video/mp4">
-        </video>
-
-        <nav>
-            <img src="imagens/logo.png" class="logo"  width="90" height="90">
+    <header class="topo">
+        <img src="imagens/logo.png" class="logo"  width="90" height="90">
+        <button id="openMenu"> &#9776;</button>
+        <nav class="menu">
             <ul>
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Lugares</a></li>
@@ -25,11 +21,25 @@
                 <li><a href="#">Cadastre-se</a></li>
             </ul>
         </nav>
-        <div class="conteudo">
-            <h1>Grécia</h1>
-            <a href="#">Explore</a>
-        </div>
-    </div>
+    </header>
+
+
+    <main>
+        <section class="plano-de-fundo">
+            <video autoplay muted plays-inline class="back-video">
+                <source src="imagens/video-fundo.mp4" type="video/mp4">
+            </video>
+            <div class="conteudo">
+                <h1>Grécia</h1>
+                <a href="#">Explore</a>
+            </div>
+        </section>
+        <section class="section2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique accusantium ad maxime. Ratione minus ex magnam, nostrum eum aperiam quod. Doloribus architecto voluptatum voluptates expedita. Unde velit atque necessitatibus iste.
+        </section>
+    </main>
+
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

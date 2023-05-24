@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.rodape {
+    padding: 20px;
+    height: 200px;
+    background: rgb(223, 206, 19);
+
+    /* flexbox config */
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape-itens {
+    background: rgb(207, 98, 98);
+    border-radius: 5px;
+    width: 30%;
+}

@@ -4,6 +4,266 @@
     box-sizing: border-box;
 }
 
+body {
+
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 1 100vw;
+}
+
+header, nav, main, aside, footer {
+	display: flex;
+	flex: 1 1 100vw;
+}
+
+nav  {
+	background: black;
+	
+}
+
+a {
+	color: white;
+}
+
+header #logo {
+	display: flex;
+	flex: 0 1 200px;
+	background: #c9c9c9;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+#openMenu, #closeMenu {
+	border: none;
+	background: none;
+	padding: 5px;
+	cursor: pointer;
+	display: none;
+}
+
+nav {
+	justify-content: center;
+	align-items: center;
+}
+
+nav a {
+	margin: 10px;
+	text-decoration: none;
+	color: white;
+}
+
+@media only screen and (max-width: 717px) {
+	#openMenu, #closeMenu {
+		display: block;
+	}
+
+	#openMenu {
+		margin-left: auto;
+	}
+
+	#closeMenu {
+		position: fixed;
+		right: 15px;
+		top: 15px;
+	}
+
+	nav {
+		position: fixed;
+		flex-direction: column;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(255, 255, 255, 0.8);
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		/* Oculta o elemento. */
+		display: none;
+		/* Invisivel */
+		opacity: 0;
+		transition: 0.3s;
+	}
+
+
+}
+
+/* CSS seção nacionalidade */
+.secao-nacionalidade {
+	display: flex;
+	width: 100%;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.secao-nacionalidade div {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.secao-nacionalidade div p {
+	font-size: 50px;
+}
+
+hr {
+	width: 90%;
+}
+
+
+/* CSS sistema de frete */
+.calculadora-frete {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.frete {
+    background: yellow;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    height: 400px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin: auto; 
+}
+
+.frete label {
+  display: block;
+  padding-bottom: 10px;
+  
+}
+
+.frete input {
+  width: 300px;
+  
+}
+
+.btm {
+    background: yellow;
+    height: 70px;
+    width: 195px;
+    margin-top: 10px;
+    border-radius: 50px;
+ 
+}
+
+/* CSS página de contatos */
+ .contato {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+	
+  }
+  
+  .informacoes p {
+	margin-bottom: 10px;
+  }
+  .icone {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	border: 1px solid black;
+	padding: 5px;
+	min-width: 90px;
+	height: 90px;
+	margin: 2%;
+	overflow: hidden;
+  }
+  .icon-img {
+	height: 80%;
+	width: 80%;
+	object-fit: fit;
+	}
+  
+  .contatos  {
+	margin: 20px;
+	width: 100%;
+  }
+  
+  .contatos h1{
+	display: block
+  }
+  
+  .title-contato {
+	display: flex;
+	justify-content: center;
+	margin: 40px;
+  }
+
+  .informacoes p a {
+	color: black;
+  }
+
+  
+
+  /* CSS serviços */
+  .servicos {
+	text-align: center;
+	width: 100%;
+	
+  }
+  .container-servicos {
+	width: 100%;
+	display: flex;
+	text-align: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	background: #808080;
+	
+  }
+  
+  .servicos h3{
+	margin-bottom: 30px;
+	
+  }
+  
+  .card {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 300px;
+	height: 460px;
+	margin: 25px;
+	background-color: #fff;
+	border-radius: 20px;
+	overflow: hidden;
+	
+  }
+  
+  .img-icon {
+	width: 150px;
+	height: 150px;
+	margin: 20px;
+	object-fit: contain;
+  }
+  
+  .servicos p {
+	margin: 10px;
+  }
+  
+  .body-servico {
+	width: 100%;
+	height: 300px;
+	background: black;
+  }
+  
+  .body-avaliacao p {
+	color: white;
+	margin: 30px;
+  }
+
+
 /* Pagina de filiais*/
 .container-filiais {
   display: flex;

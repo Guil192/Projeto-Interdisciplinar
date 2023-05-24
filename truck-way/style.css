@@ -4,6 +4,28 @@
     box-sizing: border-box;
 }
 
+/* Pagina de filiais*/
+.container-filiais {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.filiais {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.container-filiais h1 {
+  margin: 100px;
+}
+
+
+
 .rodape {
     padding: 20px;
     height: 200px;

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+:root {
+	--cor-base: rgb(0, 0, 24);
+}
+
+body {
+
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 1 100vw;
+}
+
+header, nav, main, aside, footer {
+	display: flex;
+	flex: 1 1 100vw;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Header/navegação */
+header #logo {
+	display: flex;
+	flex: 0 1 200px;
+	background: #c9c9c9;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+}
+
+#openMenu, #closeMenu {
+	border: none;
+	background: none;
+	padding: 5px;
+	cursor: pointer;
+	display: none;
+}
+
+nav {
+	background: var(--cor-base);
+	justify-content: center;
+	align-items: center;
+}
+
+nav a {
+	margin: 10px;
+	text-decoration: none;
+	color: white;
+}
+
+nav button {
+	margin-left: 50px;
+	border-radius: 20px;
+	padding: 5px;
+	background-color: white;
+
+}
+
+@media only screen and (max-width: 717px) {
+	#openMenu, #closeMenu {
+		display: block;
+	}
+
+	#openMenu {
+		margin-left: auto;
+	}
+
+	#closeMenu {
+		position: fixed;
+		right: 15px;
+		top: 15px;
+	}
+
+	nav {
+		position: fixed;
+		flex-direction: column;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(255, 255, 255, 0.8);
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		/* Oculta o elemento. */
+		display: none;
+		/* Invisivel */
+		opacity: 0;
+		transition: 0.3s;
+	}
+
+	nav a {
+		margin: 10px;
+		color: rgb(19, 19, 19);
+	}
+
+
+}
+
+/* rodapé */
+.rodape {
+    padding: 20px;
+    height: 200px;
+    background: rgb(223, 206, 19);
+
+    /* flexbox config */
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape-itens {
+    background: rgb(207, 98, 98);
+    border-radius: 5px;
+    width: 30%;
+}

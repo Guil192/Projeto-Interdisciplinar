@@ -1,0 +1,130 @@
+/* seção principal */
+.secao-principal {
+	color: aliceblue;
+	position: relative;
+	height: 100vh;
+	background: linear-gradient(rgba(78, 78, 78, 0.534), rgba(0, 0, 0, 0.11));
+}
+
+.fundo {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: bottom;
+	z-index: -1;
+	position: absolute;
+}
+
+.conteudo-area {
+	padding: 100px;
+	width: 100%;
+	height: 100%;
+}
+
+.conteudo button{
+	font-size: large;
+	border: 3px solid rgb(0, 0, 24);
+	border-radius: 20px;
+	background-color: rgb(0, 0, 0, 0);
+	padding: 5px;
+	margin-top: 20px;
+}
+
+/* CSS seção nacionalidade */
+.secao-nacionalidade {
+	background: #F7F7F7;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.secao-nacionalidade div {
+	margin: 40px 0px;
+}
+
+.secao-nacionalidade-texto-area{
+	background: yellow; 
+	width: 300px;
+}
+
+.secao-nacionalidade div p {
+	font-size: 50px;
+	text-align: center;
+}
+
+/* sistema de frete */
+.calculadora-frete {
+	background: rgb(231, 151, 151);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.frete {
+	background: yellow;
+    margin: auto; 
+    padding: 50px;
+    height: 400px;
+    width: 500px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.frete label {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.frete input {
+  width: 300px;
+}
+
+.btm {
+    background: yellow;
+    height: 70px;
+    width: 195px;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+/* qualidades seção */
+.container-qualidades{
+	height: auto;
+	padding: 30px;
+	background: rgb(213, 213, 241);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;	
+}
+
+.card-qualidades {
+	width: 500px;
+	height: 500px;
+	background: linear-gradient(rgba(238, 42, 42, 0.507), rgba(19, 155, 209, 0.986));
+	border-radius: 1px;
+	position: relative;
+	overflow: hidden;
+}
+
+.fundo-qualidades {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	object-fit: cover;
+}
+
+.conteudo-qualidades {
+	position: relative;
+	text-align: center;
+	margin-top: 50px;
+}

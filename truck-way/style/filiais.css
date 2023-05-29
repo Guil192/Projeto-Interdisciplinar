@@ -1,0 +1,21 @@
+/* Pagina de filiais*/
+.container-filiais {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+  
+.filiais {
+  width: 300px;
+}
+  
+.container-filiais h1 {
+  margin: 100px;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}

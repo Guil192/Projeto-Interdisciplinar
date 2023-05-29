@@ -9,7 +9,7 @@
 	text-align: center;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
-	background: #808080;
+	margin-bottom: 50px;
 }
   
 .servicos h3{
@@ -26,6 +26,7 @@
 	background-color: #fff;
 	border-radius: 20px;
 	overflow: hidden;
+	box-shadow: 0 0 10px black;
 }
   
 .img-icon {

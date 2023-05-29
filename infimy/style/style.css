@@ -1,94 +1,5 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-header {
-    background-color: #24252a;
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    padding:20px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo h1 {
-    color: #fff;
-}
-
-.nav-list {
-    display: flex;
-    align-items: center;
-}
-
-.nav-list ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.nav-item {
-    margin: 0 15px;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 400;
-}
-
-.menu-icon {
-    display: none;
-}
-
-.mobile-menu {
-    display: none;
-}
-
-@media screen and (max-width: 730px) {
-    .nav-item {
-        display: none;
-    }
-    .menu-icon {
-        display: block;
-    }
-    .menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-    .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-    }
-    .mobile-menu .login-button {
-        display: block;
-        padding: 1rem 2rem;
-    }
-    .mobile-menu .login-button button {
-        width: 100%;
-    }
-    .open {
-        display: block;
-    }
-}
-
 /*  css primeira seçao*/
 .container-apresentacao {
-  position: absolute;
   display: flex;
   justify-content: center;
   height: 500px;
@@ -98,7 +9,8 @@ header {
 }
 
 .gif {
-  width: 100%;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -110,16 +22,16 @@ header {
     margin: 20px;
 }
 
-h1 {
-    color:#fff;
+/* h1 {
+    color:#171586;
     font-size: 100px;
 }
 
 p {
-    color:#fff;
+    color:#371bb4;
     font-size: 12px;
     line-height: 100px;
-}
+} */
 
 button {
     width: 180px;
@@ -143,7 +55,7 @@ button {
   }
 
 .container{
-    width: 700px;
+    width: 900px;
     overflow: hidden;
 }
 .container .text{
@@ -175,12 +87,22 @@ button {
     }
 }
 
+.secao-numeros {
+  width: 100%;
+  height: 100vh;
+  padding: 300px 0;
+}
+
+.secao-numeros h2 {
+  display: flex;
+  justify-content: center;
+}
+
 .container-colunas {
   display: flex;
   justify-content: space-around;
   width: 100%;
   margin-top: 20px;
-  
 }
 
 .coluna {
@@ -188,7 +110,6 @@ button {
   height: 10px;
   width: 8px;
   flex-grow: 1;
-  
 }
 
 .coluna-divisoria {
@@ -201,6 +122,8 @@ button {
   font-size: 1.5em;
 }
 .img-teclado, .img-teclado img {
+  z-index: -1;
+  position: absolute;
   width: 100%
 }
 
@@ -244,7 +167,6 @@ button {
   height: 170px;
   padding: 15px;
   text-align: center;
-  font-family: sans-serif;
 }
 
 .card-titulo {
@@ -269,7 +191,6 @@ button {
   color: #fff;
   padding: 16px;
   text-decoration: none;
-  font-family: sans-serif;
   font-weight: 600;
   line-height: 50px;
   
@@ -352,12 +273,14 @@ form label {
 
 /* Seção serviços */
 .servicos {
+  background-color: var(--cor-alternativa);
   text-align: left;
   width: 100%;
+  display: block;
 }
 
 .title-servico {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -372,18 +295,17 @@ form label {
   justify-items: center;
   align-items: center;
   width: 100%;
-  flex-grow: 1;
-  flex-wrap: wrap;
   margin: 5%;
 }
 
 .container-icon-serv {
+  position: relative;
   width: 30%;
 }
 
 .icon-serv {
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 300px;
 }
 
 h1 {
@@ -393,13 +315,19 @@ h1 {
 
 /* CSS seção de skills */
 .container-skills {
+  padding-left: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
   text-align: center;
-  background: #808080;
+  background: var(--cor-base);
 }
 .skills {
   display: flex;
-  justify-content: space-around;
-  height:200px;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  margin: 50px;
 }
 
 .cont-tech {
@@ -413,11 +341,16 @@ h1 {
 }
 
 .container-skills p{
+  color: white;
   font-size: 30px;
-  margin: 50px;
+  margin: 0px 50px;
 }
 
 /* Seção redes sociais */
+.titulo-config {
+  display: flex;
+  justify-content: center;
+}
 
 .titulo {
   width: 100%;
@@ -427,12 +360,12 @@ h1 {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  font-family: 'hebbo';
 }
 
 #redes-sociais h1 {
   font-size: 40px;
   margin-bottom: 100px;
-  margin-top: -100px;
   letter-spacing: 5px;
 }
 
@@ -468,9 +401,10 @@ h1 {
   height: 100%;
   top: -90px;
   left: 0;
-  background: linear-gradient(-45deg, #ed1c94, #ffec14);
+  background: linear-gradient(-45deg, #311ced, #1a1918);
   position: absolute;
-  transition: 2.0s;
+  transition-delay: 1s;
+  transition: 0.5s;
 }
 
 .social-links a:hover::after {

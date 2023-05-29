@@ -1,17 +1,15 @@
 ﻿<!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-Br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
     <link rel="stylesheet" href="style/style-geral.css">
-    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/funcionario.css">
+    <title>Home</title>
 </head>
-
 <body>
-	<header>
+    <header>
 		<a href="home.html"><img id="logo" src="Imagens/logo-branca.png" alt="Logo da Truck Way"></a>
 
 		<button id="openMenu"> &#9776;</button>
@@ -24,28 +22,18 @@
 			<a href="filiais.html">Filiais</a>
 			<a href="sobre.html">Sobre</a>
 			<a href="contato.html">Contato</a>
-			<button><a href="login.html">Login</a></button>
+            <a href="funcionario.html">Funcionário</a>
 
 			<script src="js/menu.js"></script>
 		</nav>
 	</header>
 
-    <div class="geral">
-        <form class="formLogin">
-            <h1>Login</h1>
-            <p>Digite os seus dados de acesso</p>
-            <label for="text">usuario</label>
-            <input type="text" placeholder="Login" id="login">
-            <label for="password">senha</label>
-            <input type="password" placeholder="Senha" id="senha">
-            <input type="submit" class="botao_login" value="Acessar" onclick=" logar(); return false">
+    <section class="secao-funcionarios">
+    	<h1 class="titulo">Bem vindo a nossa area de funcionários</h1>
+    	<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTahnCAeQoAw9rOI6fsZ_zi02P1pJmdl8CEQ4KX7o06O_j08CRf-g3Ryt3XOWmcIg/pubhtml?gid=1067515078&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="480"></iframe>
+    </section>
 
-        </form>
-    </div>
-
-    <script src="js/login.js"></script>
-
-    <footer class="rodape">
+	<footer class="rodape">
 		<div class="rodape-itens">
 			<a href="home.html">Home</a>
 			<a href="servicos.html">Serviços</a>
@@ -63,5 +51,4 @@
 		</div>
 	</footer>
 </body>
-
 </html>

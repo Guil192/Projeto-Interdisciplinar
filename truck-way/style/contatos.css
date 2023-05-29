@@ -1,4 +1,6 @@
 /* CSS página de contatos */
+
+
 .contato {
 	margin-bottom: 40px;
 	display: flex;
@@ -28,13 +30,13 @@
 	object-fit: fit;
 }
   
-.contatos  {
-	margin: 20px;
+.contatos {
+	background-color: var(--cor-alternativa);
 	width: 100%;
 }
   
 .contatos h1{
-	display: block
+	display: block;
 }
   
 .title-contato {
@@ -45,4 +47,8 @@
 
 .informacoes p a {
 	color: black;
+}
+
+.container-contato {
+	padding-left: 100px;
 }

@@ -2,53 +2,76 @@
 <html lang="pt-br">
 
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" href="style/style-geral.css"/>
-  <link rel="stylesheet" href="style/afiliais.css">
-  <title>Truck Way - Afiliais</title>
+	<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="style/style-geral.css" />
+	<link rel="stylesheet" href="style/filiais.css">
+	<title>Truck Way - Afiliais</title>
 </head>
 
 <body>
-  <header>
-		<div id="logo">Logo</div>
+	<header>
+		<a href="home.html"><img id="logo" src="Imagens/logo-branca.png" alt="Logo da Truck Way"></a>
 
 		<button id="openMenu"> &#9776;</button>
 
 		<nav id="menu">
 			<button id="closeMenu">X</button>
-	
-			<a href="home.html"> Home </a>
-			<a href="servicos.html"> Serviços </a>
-			<a href="filiais.html"> Filiais </a>
-			<a href="sobre.html"> Sobre </a>
-			<a href="contato.html"> Contato </a>
-	
+
+			<a href="home.html">Home</a>
+			<a href="servicos.html">Serviços</a>
+			<a href="filiais.html">Filiais</a>
+			<a href="sobre.html">Sobre</a>
+			<a href="contato.html">Contato</a>
+			<button><a href="login.html">Login</a></button>
+
 			<script src="js/menu.js"></script>
 		</nav>
 	</header>
-  <div>
+	<main>
+		<section>
+			<h1 class="titulo">Filiais</h1>
+			<div class="container-filiais">
+				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1DyAiCSrU49YiqI6Hz86lGL60ZwKO13k&ehbc=2E312F"
+					width="800px" height="480"></iframe>
+				<div class="filiais">
+					<h2>Matriz:</h2>
+					<ul>
+						<li>local: Mauá</li>
+					</ul>
+					<br>
+					<h2>Filiais:</h2>
+					<ul>
+						<li>Local: Campinas</li>
+						<li>Local: Volta Redonda (RJ)</li>
+						<li>Local: Jundiaí</li>
+						<li>Local: Santos</li>
+					</ul>
+					<p>Filial no Porto</p>
+					<ul>
+						<li>Local: Santos</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
 
-  <div class="container-filiais">
-    <h1>FILIAIS</h1>
-  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1DyAiCSrU49YiqI6Hz86lGL60ZwKO13k&ehbc=2E312F" width="95%" height="480"></iframe>
-    <div class="filiais">
-      <p>Matriz</p>
-      <ul>
-        <li>local: Mauá</li>
-      </ul>
-      <p>Filiais</p>
-      <ul>
-        <li>Local: Campinas</li>
-        <li>Local: Volta Redonda (RJ)</li>
-        <li>Local: Jundiaí</li>
-        <li>Local: Santos</li>
-      </ul>
-      <p>Filial no Porto</p>
-      <ul>
-        <li>Local: Santos</li>
-      </ul>
-    </div>
-  </div>
+	<footer class="rodape">
+		<div class="rodape-itens">
+			<a href="home.html">Home</a>
+			<a href="servicos.html">Serviços</a>
+			<a href="filiais.html">Filiais</a>
+			<a href="sobre.html">Sobre</a>
+			<a href="contato.html">Contato</a>
+			<a href="login.html">Login</a>
+		</div>
+		<div class="rodape-itens">
+			<p>Site fornecido por <a href="../infimy/inicial.html">Infy.my</a></p>
+		</div>
 
+		<div class="rodape-itens">
+			<p>Copyright © 2023 Truck Way. Todos os direitos reservados. CNPJ: 12.345.435/9238-2162. Matriz em Máua, São paulo, Brasil. Atendimento em 9299222-8838383.</p>
+		</div>
+	</footer>
 </body>
+
 </html>

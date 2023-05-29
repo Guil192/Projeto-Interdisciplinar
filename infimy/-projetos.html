@@ -2,39 +2,41 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Projetos</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style-geral.css">
+  <link rel="stylesheet" href="style/projetos.css">
+  <link rel="shortcut icon" sizes="512x512" href="img/favicon.png" type="image/x-icon">
+  <title>Página nossa</title>
 </head>
 
 <body>
-    <header>
-        <nav class="nav-container">
-            <div class="logo">
-                <h1>Logo</h1>
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
-                </ul>
-            </div>
-            <div class="menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
-            </div>
-        </nav>
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-            </ul>
-       
-        </div>
-    </header>
+  <header>
+    <nav class="nav-container">
+      <img class="logo" src="img/logo.png" alt="">
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="inicial.html" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="projetos.html" class="nav-link">Projetos</a></li>
+          <li class="nav-item"><a href="sobre.html" class="nav-link"> Sobre</a></li>
+        </ul>
+      </div>
+      <div class="menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="projetos.html" class="nav-link">Projetos</a></li>
+        <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+      </ul>
+    </div>
+    <script src="js/menu.js"></script>
+  </header>
+
+
 
     <script src="js/menu.js"></script>
 
@@ -93,16 +95,16 @@
     </div>
   </div>
 
-    <footer>
-        <div class="footer-main">
-            <div class="footer-config">
-                (contato da empresa)
-            </div>
-            <div class="footer-config">
-                (empresa dona)
-            </div>
-        </div>
-    </footer>
+	<footer class="rodape">
+		<div class="rodape-itens">
+			<a href="inicial.html">Home</a>
+			<a href="servicos.html">Serviços</a>
+			<a href="sobre.html">Sobre</a>
+		</div>
+		<div class="rodape-itens">
+			<p>Copyright © 2023 Infi.my. Todos os direitos reservados. CNPJ: 53.768.345/9348-2342. Atendimento em 8806-23095.</p>
+		</div>
+	</footer>
 </body>
 
 </html>

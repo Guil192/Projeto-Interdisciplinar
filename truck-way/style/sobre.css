@@ -1,0 +1,13 @@
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 0px 100px;
+    text-align: justify;
+}

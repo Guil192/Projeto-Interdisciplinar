@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+:root {
+	--cor-base: rgb(0, 0, 15);
+	--distancia-base: 100px;
+	--cor-alternativa: rgb(253, 249, 238);
+	--distancia-titulo: 1.2;
+	--tamanho-texto: 16px;
+}
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 1 100vw;
+	background-color: var(--cor-alternativa);
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    margin: 50px 0px;
+}
+
+
+header, nav, main, aside, footer {
+	display: flex;
+	flex: 1 1 100vw;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Header/navegação */ 
+header {
+	z-index: 30;
+	width: 97vw;
+	padding-left: 30px;
+	background-color: var(--cor-base);
+}
+
+header #logo {
+	width: 70px;
+	height: 70px;
+}
+
+#openMenu, #closeMenu {
+	border: none;
+	background: none;
+	padding: 5px;
+	cursor: pointer;
+	display: none;
+}
+
+nav {
+	padding: 0px 30px;
+	background: transparent;
+	justify-content: end;
+	align-items: center;
+}
+
+nav a {
+	margin: 0px 20px;
+	text-decoration: none;
+	color: white;
+}
+
+nav button {
+	padding: 0px 40px 0px 10px;
+	border-radius: 20px;
+	padding: 5px;
+	background-color: rgb(255, 255, 255);
+}
+
+nav button a {
+	color: var(--cor-base);
+}
+
+nav button:hover {
+	background-color: rgb(236, 236, 236);
+}
+
+@media only screen and (max-width: 717px) {
+	#openMenu, #closeMenu {
+		display: block;
+	}
+
+	#openMenu {
+		margin-left: auto;
+		color: white;
+		font-size: 30px;
+	}
+
+	#closeMenu {
+		font-size: 30px;
+		position: fixed;
+		right: 15px;
+		top: 15px;
+	}
+
+	nav {
+
+		z-index: 9;
+		position: fixed;
+		flex-direction: column;
+		width: 70vw;
+		height: 100vh;
+		background: rgba(255, 255, 255, 1);
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		gap: 0;
+		/* Oculta o elemento. */
+		display: none;
+		/* Invisivel */
+		opacity: 0;
+		transition: 0.3s;
+	}
+
+	nav a {
+		margin: 10px;
+		color: rgb(19, 19, 19);
+	}
+
+	nav button {
+		/* deixe os dois margins
+		um reseta a configuração padrao e outro define a nova */
+		margin: 0px;
+		margin-top: 10px;
+	}
+
+}
+
+/* rodapé */
+.rodape {
+    padding: 20px 100px;
+	width: 100vw;
+    height: 200px;
+    background: var(--cor-base);
+	color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape a {
+	color: white;
+	gap: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.rodape-itens p {
+	text-align: left;
+}
+
+.rodape-itens {
+    width: 30%;
+}

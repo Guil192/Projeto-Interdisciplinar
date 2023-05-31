@@ -1,0 +1,54 @@
+/* CSS página de contatos */
+
+
+.contato {
+	margin-bottom: 40px;
+	display: flex;
+	align-items: center;
+}
+  
+.informacoes p {
+	margin-bottom: 10px;
+}
+
+.icone {
+	min-width: 90px;
+	height: 90px;
+	margin: 2%;
+	border-radius: 50%;
+	padding: 5px;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+  
+.icon-img {
+	height: 80%;
+	width: 80%;
+	object-fit: fit;
+}
+  
+.contatos {
+	background-color: var(--cor-alternativa);
+	width: 100%;
+}
+  
+.contatos h1{
+	display: block;
+}
+  
+.title-contato {
+	display: flex;
+	justify-content: center;
+	margin: 40px;
+}
+
+.informacoes p a {
+	color: black;
+}
+
+.container-contato {
+	padding-left: 100px;
+}

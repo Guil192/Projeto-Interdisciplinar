@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style-geral.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="shortcut icon" sizes="512x512" href="img/favicon.png" type="image/x-icon">
+  <title>Página nossa</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-container">
+      <img class="logo" src="img/logo.png" alt="">
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="inicial.html" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="projetos.html" class="nav-link">Projetos</a></li>
+          <li class="nav-item"><a href="sobre.html" class="nav-link"> Sobre</a></li>
+        </ul>
+      </div>
+      <div class="menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="projetos.html" class="nav-link">Projetos</a></li>
+        <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+      </ul>
+    </div>
+    <script src="js/menu.js"></script>
+  </header>
+
+  <section>
+    <div class="container-apresentacao">
+
+      <div class="body-apresentacao">
+        <h1>Infimy</h1>
+        <div class="container-textanimation">
+          <div class="container">
+            <p><span class="text primeiro-texto">Nós desenvolvemos softwares </span>
+              <span class="text segundo-texto">Rapidos</span>
+            </p>
+          </div>
+        </div>
+        <script src="js/text-animation.js"></script>
+        <button type="button">Fale conosco</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="servicos">
+    <div class="servico-tech">
+		<div>
+			<img src="img/img-computador.png" class="icon-serv">
+		</div>
+		<div>
+			<h2><span class="title-servico">desenvolvimento de software web/desktop</span></h2>
+		</div>
+		</div>
+		<div class="servico-tech">
+		<div>
+			<h2><span class="title-servico">desenvolvimento de aplicativos</span></h2>
+		</div>
+		<div>
+			<div class="container-icon-serv">
+			<img src="img/img-celular.png" class="icon-serv">
+			</div>
+		</div>
+		</div>
+    </div>
+  </section>
+
+  <section class="container-skills">
+    <p>Dominamos essas tecnolologias</p>
+
+    <div class="skills">
+      <div class="cont-tech">
+        <img src="img/html.png" class="img-tech">
+      </div>
+      <div class="cont-tech">
+        <img src="img/css.png" class="img-tech">
+      </div>
+      <div class="cont-tech">
+        <img src="img/js.png" class="img-tech">
+      </div>
+    </div>
+  </section>
+
+  <section id="numeros">
+    <div class="secao-numeros">
+		<h2>Nossos números falam por nós</h2>
+		<!-- <div class="img-teclado">
+		  <img src="img/img-teclado.png">
+		</div> -->
+		<div class="container-colunas">
+		  <div class="coluna">
+			<h2>+200</h2>
+			<P>Projetos Concluidos</P>
+		  </div>
+		  <div class="coluna-divisoria"></div>
+		  <div class="coluna">
+			<h2>+XX</h2>
+			<p>Anos no Mercado</p>
+		  </div>
+		  <div class="coluna-divisoria"></div>
+		  <div class="coluna">
+			<h2>+400.000</h2>
+			<p>Linhas de Código</p>
+		  </div>
+		</div>
+	</div>
+  </section>
+
+  <section id="section-form">
+    <!-- <div>
+      <img src="img/gif-programando.gif">
+    </div> -->
+    <div class="container-form">
+      <h1 class="title-form">Formulário de Contato</h1>
+      <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+        <label>Nome</label>
+        <input type="text" placeholder="Digite seu nome" name="nome">
+        <input type="hidden" name="accessKey" value="e614fd88-31e6-4e96-9aa7-c99885146153">
+        <label>E-mail</label>
+        <input type="email" placeholder="Digite seu e-mail" name="email">
+        <label>Telefone</label>
+        <input type="tel" placeholder="Digite seu telefone" name="telefone" pattern="[0-9]+$">
+        <label>Mensagem</label>
+
+        <textarea name="msg" rows="6" placeholder="Conte mais sobre seu projeto"></textarea>
+        <input type="hidden" name="redirectTo" value="index.html">
+        <input type="submit" value="enviar" class="botao">
+
+      </form>
+    </div>
+  </section>
+
+  <section id="redes-sociais">
+	<script src="https://kit.fontawesome.com/e3a40ec135.js" crossorigin="anonymous"></script>
+    <div class="titulo">
+      <h1 class="titulo-config">Redes Sociais</h1>
+
+      <div class="social-links">
+        <a href="https://facebook.com">
+			<img src="" alt="">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://youtube.com">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://twitter.com">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://linkedin.com">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://instagram.com">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="rodape">
+	<div class="rodape-itens">
+		<a href="inicial.html">Home</a>
+		<a href="servicos.html">Serviços</a>
+		<a href="sobre.html">Sobre</a>
+	</div>
+	<div class="rodape-itens">
+		<p>Copyright © 2023 Infi.my. Todos os direitos reservados. CNPJ: 53.768.345/0001-2342. Atendimento em
+			8806-23095.</p>
+	</div>
+	</footer>	
+</body>
+
+</html>

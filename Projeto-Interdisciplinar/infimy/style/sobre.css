@@ -1,0 +1,12 @@
+.sobre-config {
+    width: 100%;
+    height: 100vh;
+    background: var(--cor-alternativa);
+    padding: 0 100px;
+}
+
+.titulo-sobre {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --cor-base: #24252a;
+    --cor-alternativa: #fffaec;
+}
+
+header {
+    background: var(--cor-base);
+}
+
+.nav-container {
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 220px;
+    height: 75px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-item {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}
+
+/* rodape */
+.rodape {
+    padding: 20px 100px;
+	width: 100%;
+    height: 100px;
+    background: var(--cor-base);
+	color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape a {
+	color: white;
+	gap: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.rodape-itens p {
+	text-align: left;
+}
+
+.rodape-itens {
+    width: 30%;
+}

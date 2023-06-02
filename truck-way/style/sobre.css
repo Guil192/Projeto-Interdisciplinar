@@ -5,9 +5,10 @@
 }
 
 .conteudo {
+    height: 60vh;
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 50px;
     padding: 0px 100px;
     text-align: justify;
 }

@@ -2,7 +2,7 @@ const text = document.querySelector(".segundo-texto");
 
 const textLoad = () => {
     setTimeout(() => {
-        text.textContent = "tecnologicos";
+        text.textContent = "tecnológicos";
     }, 0);
     setTimeout(() => {
         text.textContent = "seguros";

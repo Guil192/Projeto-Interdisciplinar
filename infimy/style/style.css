@@ -204,6 +204,8 @@ form label {
 .title-form {
   margin-bottom: 50px;
   font-size: 40px;
+  padding: 3px;
+  background: black; 
 }
 
 #section-form img {

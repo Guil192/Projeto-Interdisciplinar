@@ -24,16 +24,16 @@
   margin: 20px;
 }
 
-/* h1 {
+body-apresentacao h1 {
     color:#171586;
     font-size: 100px;
 }
 
-p {
+body-apresentacao p {
     color:#371bb4;
     font-size: 12px;
     line-height: 100px;
-} */
+}
 
 button {
   width: 180px;

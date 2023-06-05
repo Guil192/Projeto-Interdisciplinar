@@ -143,7 +143,6 @@ nav button:hover {
 .rodape {
     padding: 20px 100px;
 	width: 100vw;
-    height: 200px;
     background: var(--cor-base);
 	color: white;
     display: flex;
